@@ -132,35 +132,6 @@ void loop(void)
 
   //delay(10000); 
 } 
-/*
-void handle_root() {
-  //server.send(200, "text/plain", "Hello from the weather esp8266, read from /temp or /humidity");
-  delay(100);
-}
 
-/*
-void gettemperature() {
-  // Wait at least 2 seconds seconds between measurements.
-  // if the difference between the current time and last time you read
-  // the sensor is bigger than the interval you set, read the sensor
-  // Works better than delay for things happening elsewhere also
-  unsigned long currentMillis = millis();
- 
-  if(currentMillis - previousMillis >= interval) {
-    // save the last time you read the sensor 
-    previousMillis = currentMillis;   
- 
-    // Reading temperature for humidity takes about 250 milliseconds!
-    // Sensor readings may also be up to 2 seconds 'old' (it's a very slow sensor)
-    //humidity = dht.readHumidity();          // Read humidity (percent)
-    //temp_f = dht.readTemperature(true);     // Read temperature as Fahrenheit
-    temp_f = analogRead(A0);
-    // Check if any reads failed and exit early (to try again).
-   /* if (isnan(humidity) || isnan(temp_f)) {
-      Serial.println("Failed to read from DHT sensor!");
-      return;
-    }
-  }
-}
-*/
+
 
